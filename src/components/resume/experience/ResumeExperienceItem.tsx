@@ -33,14 +33,16 @@ export const ResumeExperienceItem = ({
 
   return (
     <section className="grid grid-cols-12 gap-3">
-      <p className="col-span-12 md:col-span-3 text-zinc-500">
+      <p className="col-span-12 md:col-span-3 text-zinc-500 font-semibold">
         {item.period.startAt} —{' '}
         {t('content', {
-          content: item.period.endAt,
+          content: t.has(item.period.endAt as any)
+            ? t(item.period.endAt as any)
+            : item.period.endAt,
         })}
       </p>
       <div className="col-span-12 md:col-span-9 flex flex-col gap-3">
-        <LinkLabel href={item.titleLink}>{titleText}</LinkLabel>
+        <LinkLabel className="font-semibold" href={item.titleLink}>{titleText}</LinkLabel>
         <DescriptionLabel>
           {t.rich('content', {
             ...components,
@@ -68,7 +70,7 @@ export const ResumeExperienceItem = ({
                 {!!achievement.skills?.length && (
                   <div className="flex flex-row flex-wrap items-center gap-2 mb-2">
                     {achievement.skills.map((skill) => (
-                      <Badge className="bg-zinc-800" key={skill}>
+                      <Badge className="bg-zinc-700 text-zinc-300" key={skill}>
                         {skill}
                       </Badge>
                     ))}

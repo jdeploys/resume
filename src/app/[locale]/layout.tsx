@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 
+import { BackgroundCircleLayout } from '@/components/layout/BackgroundCircleLayout';
 import { routing } from '@/i18n/routing';
 
 const geistSans = Geist({
@@ -52,10 +53,12 @@ export default async function LocaleLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen py-8 px-4 bg-zinc-800 text-zinc-50 gap-8 bg-gradient-to-tr from-zinc-700 to-zinc-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-zinc-800 text-zinc-50`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <BackgroundCircleLayout className="grid grid-cols-12 py-8 px-4 gap-8">
+            {children}
+          </BackgroundCircleLayout>
         </NextIntlClientProvider>
       </body>
     </html>

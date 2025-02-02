@@ -6,8 +6,10 @@ export default function HomePage() {
   return (
     <>
       <ResumeTitle />
-      <ResumeAbout />
-      <ResumeExperienceList />
+      <div className="lg:col-span-7 col-span-12 space-y-12">
+        <ResumeAbout />
+        <ResumeExperienceList />
+      </div>
     </>
   );
 }
