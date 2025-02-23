@@ -56,7 +56,7 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-zinc-800 text-zinc-50`}
       >
         <NextIntlClientProvider messages={messages}>
-          <BackgroundCircleLayout className="grid grid-cols-12 py-8 px-4 gap-8">
+          <BackgroundCircleLayout className="grid grid-cols-12 py-8 px-4 md:px-8 gap-8">
             {children}
           </BackgroundCircleLayout>
         </NextIntlClientProvider>
