@@ -28,11 +28,11 @@ const NavigationLink = ({ title, link, sectionKey }: NavigationLinkProps) => {
       />
       <div
         className={cn(
-          'transition-all duration-300 font-semibold',
+          'transition-all duration-300 ',
           !isShowSection[sectionKey] && 'text-zinc-500',
         )}
       >
-        {title}
+        <span className="uppercase font-semibold text-sm">{title}</span>
       </div>
     </a>
   );

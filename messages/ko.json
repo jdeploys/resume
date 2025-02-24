@@ -24,7 +24,10 @@
     "achievements": "성과"
   },
   "archive": {
-    "show": "성과 보기"
+    "show": "주도적 성과 보기"
+  },
+  "project": {
+    "title": "Projects"
   },
   "current": "현재",
   "content": "{content}"

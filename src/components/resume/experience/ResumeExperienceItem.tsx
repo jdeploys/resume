@@ -45,8 +45,8 @@ export const ResumeExperienceItem = ({
         <LinkLabel className="font-semibold" href={item.titleLink}>{titleText}</LinkLabel>
         <DescriptionLabel>
           {t.rich('content', {
-            ...components,
             content: item.description,
+            ...components,
           })}
         </DescriptionLabel>
         {!!item.skillStacks.length && (

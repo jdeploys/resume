@@ -13,6 +13,12 @@ interface ResumeStoreAction {
   setShowSection: (section: string, isShow: boolean) => void;
 }
 
+const initSection = {
+  about: false,
+  experience: false,
+  project: false,
+} as const;
+
 export const useResumeStore = create<ResumeStoreState & ResumeStoreAction>()(
   persist(
     (set) => ({
@@ -26,7 +32,7 @@ export const useResumeStore = create<ResumeStoreState & ResumeStoreAction>()(
         set((state) => {
           return {
             isShowSection: {
-              ...state.isShowSection,
+              ...(isShow ? initSection : state.isShowSection),
               [section]: isShow,
             },
           };

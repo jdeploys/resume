@@ -32,6 +32,11 @@ export const ResumeTitle = ({ className }: Cn) => {
             link="#experience"
             sectionKey="experience"
           />
+          <NavigationLink
+            title={t('project.title')}
+            link="#project"
+            sectionKey="project"
+          />
         </div>
         {socials ? (
           <div className="lg:fixed bottom-16 left-12 flex flex-row items-center gap-2">
