@@ -27,7 +27,12 @@
     "show": "주도적 성과 보기"
   },
   "project": {
-    "title": "Projects"
+    "title": "Projects",
+    "view_all": "프로젝트 전체 보기"
+  },
+  "product": {
+    "title": "Products",
+    "view_all": "모든 제품 보기"
   },
   "current": "현재",
   "content": "{content}"

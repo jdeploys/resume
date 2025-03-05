@@ -13,9 +13,7 @@ import { useResumeStore } from '@/shared/zustand/useResumeStore';
 export const ResumeExperienceList = () => {
   const t = useTranslations();
 
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
+  const { ref, inView } = useInView();
 
   const { isShowSummary, toggleSummary, setShowSection } = useResumeStore(
     useShallow((state) => ({

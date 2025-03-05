@@ -15,9 +15,15 @@ export interface DescriptionHover {
   content: string;
 }
 
+export interface ProjectImage {
+  alt: string;
+  url: string;
+}
+
 export interface ProjectContent {
   period: Period;
   imgUrl: string;
+  images?: ProjectImage[];
   title: string;
   titleLink?: string;
   description: string;
@@ -30,6 +36,7 @@ export interface ProjectContent {
     count: string;
     link: string;
   };
+  useTitle?: boolean;
 }
 
 export interface ExperienceContent {

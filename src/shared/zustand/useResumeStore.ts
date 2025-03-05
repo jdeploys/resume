@@ -17,6 +17,7 @@ const initSection = {
   about: false,
   experience: false,
   project: false,
+  product: false,
 } as const;
 
 export const useResumeStore = create<ResumeStoreState & ResumeStoreAction>()(
@@ -27,6 +28,7 @@ export const useResumeStore = create<ResumeStoreState & ResumeStoreAction>()(
         about: true,
         experience: false,
         project: false,
+        product: false,
       },
       setShowSection: (section, isShow) => {
         set((state) => {

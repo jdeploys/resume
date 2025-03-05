@@ -33,6 +33,11 @@ export const ResumeTitle = ({ className }: Cn) => {
             sectionKey="experience"
           />
           <NavigationLink
+            title={t('product.title')}
+            link="#product"
+            sectionKey="product"
+          />
+          <NavigationLink
             title={t('project.title')}
             link="#project"
             sectionKey="project"
