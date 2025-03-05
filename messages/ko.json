@@ -27,12 +27,16 @@
     "show": "주도적 성과 보기"
   },
   "project": {
-    "title": "Projects",
-    "view_all": "프로젝트 전체 보기"
+    "title": "Projects"
   },
   "product": {
     "title": "Products",
-    "view_all": "모든 제품 보기"
+    "view_all": "모든 제품 보기",
+    "year": "년도",
+    "name": "제품명",
+    "company": "소속",
+    "skills": "주요 기술",
+    "links": "링크"
   },
   "current": "현재",
   "content": "{content}"

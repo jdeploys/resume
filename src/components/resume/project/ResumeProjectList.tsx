@@ -32,6 +32,7 @@ export const ResumeProjectList = ({ ...props }: ResumeProjectListProps) => {
     <div ref={ref} id="project" className="flex flex-col gap-12">
       <span className="text-sm font-semibold">PROJECTS</span>
       {projectHistory
+        .filter((row) => row.imgUrl)
         .map((item) => (
           <ResumeProjectListItem key={item.title} item={item} />
         ))}

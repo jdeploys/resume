@@ -12,7 +12,7 @@ export const DescriptionLabel = ({
   children,
 }: DescriptionLabelProps) => {
   return (
-    <p className={cn('text-zinc-400 whitespace-pre-line font-light', className)}>
+    <p className={cn('text-zinc-400 whitespace-pre-line font-light leading-6', className)}>
       {children}
     </p>
   );

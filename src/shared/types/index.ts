@@ -21,6 +21,7 @@ export interface ProjectImage {
 }
 
 export interface ProjectContent {
+  company?: string;
   period: Period;
   imgUrl: string;
   images?: ProjectImage[];
